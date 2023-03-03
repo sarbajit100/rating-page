@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="thank">
+        <div class="thank1">
+            <img src="https://images.iconfu.com/sets/19-glow/icons/receipt_printer_icon.png" alt="">
+            <p class="message-rating">You selected&nbsp<span id="number">0</span>&nbspout of 5</p>
+        </div>
+        <div class="thank2">
+            <h1>Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>
+        
+    </section>
+   
+    <script>
+        const rating = localStorage.getItem('val')
+        let message = document.querySelector("#number");
+    message.innerHTML = rating;
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(216, 12%, 8%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background: hsl(215, 23%, 14%);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    
+}
+.main>h1{
+    color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.main>p{
+    color: hsl(217, 12%, 63%);
+    margin: 5px 50px;
+    padding-bottom: 40px;
+}
+input[type=radio]{
+    position: absolute;
+    z-index: 10;
+}
+.middle{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+label{
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: hsl(210, 19%, 18%);
+    transition: .3s all ease;
+}  
+
+label:hover{
+    cursor: pointer;
+    background: hsl(25, 97%, 53%);
+}
+input[type=radio]:checked+label{
+    background: hsl(25, 97%, 53%);
+}
+button{
+    background: hsl(25, 97%, 53%);
+    margin-top: 20px;
+    height: 100px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    margin-left: 33%;
+    text-decoration: none;
+}
+button:hover{
+    background: hsl(253, 51%, 59%);
+    color: hsl(65, 58%, 54%);
+    cursor: pointer;
+}
+button>a{
+    text-decoration: none;
+}
+.thank{
+    background: hsl(215, 23%, 14%);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.thank1 img{
+    height: 100px;
+    width: 100px;
+    padding-bottom: 20px;
+    padding-left: 22%;
+}
+.thank1>p {
+    background-color: rgb(101, 101, 95);
+    padding: 10px;
+    border-radius: 10px;
+    color: hsl(25, 97%, 53%);
+}
+.thank2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10% 20%;
+}
